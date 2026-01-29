@@ -1,0 +1,66 @@
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    border: 1px solid rgba(128, 128, 128, 0.431);
+    width: 1000px;
+    height: 35px;
+    display: grid;
+    grid-template-columns: 40px 480px 460px;
+    justify-items: center;
+    align-items: center;
+}
+
+.envProtect {
+    background-color: #00DA3B;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgProtect {
+    width: 15px;
+    height: 15px;
+}
+
+h1 {
+    color: #00DA3B;
+    font-size: 10px;
+    justify-self: end;
+}
+
+.rightButtom {
+    border: 1px solid #00DA3B;
+    color: #00DA3B;
+    width: 120px;
+    height: 15px;
+    display: grid;
+    grid-template-columns: 10px 2fr 10px 2fr;
+    border-radius: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-self: end;
+}
+
+.txtRightButtom {
+    font-size: 10px;
+}
+
+#pointB {
+    font-size: 4px;
+    justify-self: end;
+}
+
+#pointS {
+    font-size: 2px;
+    justify-self: end;
+
+}
