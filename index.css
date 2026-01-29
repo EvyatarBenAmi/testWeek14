@@ -64,3 +64,50 @@ h1 {
     justify-self: end;
 
 }
+.centralSquare{
+    background-color:#140F1E;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 1000px;
+    height: 150px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.centralSquareleft{
+    grid-column: 2;
+}
+.bottomNum{
+    font-size: 10px;
+    margin: 5px 0 5px;
+    color: gray;
+}
+.num{
+    font-size: 20px;
+    margin-top: 8px;
+    color: hsla(140, 98%, 48%, 0.993);
+
+}
+
+.radar, .sweep { position: absolute; }
+.radar {
+  overflow: hidden; 
+
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
+    inset 0 0 0 2px hsla(140, 98%, 48%, 0.993);
+}
+.sweep {
+  box-sizing: border-box;
+  top: 6px; left: 6px;
+  border-right: solid 1px hsla(145, 50%, 40%, .3);
+  width: 70px; height: 70px;
+  border-radius: 100% 0 0 0;
+  transform-origin: 100% 100%;
+  background: linear-gradient(50deg, rgba(34, 34, 34, 0) 56%, hsla(145, 50%, 40%, 1) );
+  animation: sweep 5s infinite linear;
+}
+@keyframes sweep { to { transform: rotate(360deg); } }
